@@ -1,0 +1,31 @@
+.navbar {
+    width: 100%;
+    padding: 16px 32px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-container {
+        display: flex;
+
+        .header {
+            font-size: 32px;
+            font-weight: bold;
+            color: #0290ff;
+        }
+
+        .links {
+            margin-left: 32px;
+            display: flex;
+
+            .link {
+                margin: 0 16px;
+                color: #121212;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}

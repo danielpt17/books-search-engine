@@ -1,0 +1,16 @@
+<div class="container" *ngIf="book">
+    <div class="image-container">
+        <img [src]="book?.image">
+    </div>
+    <div class="right-container">
+        <p-scrollPanel [style]="{width:'100%',height:'90%'}">
+            <div class="details">
+                <span class="detail"><b>Title:</b> {{book.title}}</span>
+                <span class="detail" *ngIf="book.description"><b>Description:</b> {{book.description}}</span>
+                <span class="detail" *ngIf="book.authors"><b>Authors:</b> {{book.authors}}</span>
+                <span class="detail" *ngIf="book.categories"><b>Categories:</b> {{book.categories}}</span>
+            </div>
+        </p-scrollPanel>
+        <p-button (click)="onWishlistClick()" label="Add to wishlist"></p-button>
+    </div>
+</div>

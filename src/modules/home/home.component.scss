@@ -1,0 +1,14 @@
+.search-container{
+    padding:32px;
+    height:80%;
+    .form-container{
+        .search-input{
+            border-radius: 4px;
+            border: solid 10px #fff;
+        }
+        margin-bottom: 12px;
+    }
+    .paginator-wrapper{
+        margin-top: 12px;
+    }
+}

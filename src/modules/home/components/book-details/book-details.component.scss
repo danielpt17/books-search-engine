@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    .image-container{
+        margin-right: 8px;;
+        img {
+                width: 130px;
+                height: 200px;
+            }
+    }
+    .right-container {
+        display: flex;
+        flex-direction: column;
+
+        .details {
+            display: flex;
+            margin-left: 12px;
+            flex-direction: column;
+            max-width: 400px;
+
+            .detail {
+                margin: 8px;
+            }
+        }
+    }
+}

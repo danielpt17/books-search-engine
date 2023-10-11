@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+
+    .login-container {
+        display: flex;
+        height: 600px;
+        width: 80%;
+        background-color: white;
+        border: solid 1px #f5f6fa;
+
+        .left-side {
+            display: flex;
+            width:70%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .welcome-message {
+                text-align: center;
+                font-size: 28px;
+                width: 500px;
+                font-weight: bold;
+            }
+            img{
+                width:250px;
+            }
+        }
+
+
+        input {
+            margin-right: 8px;
+        }
+
+        .form-container {
+            width:30%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin-right: 4px;
+            input {
+                margin-top: 8px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8px;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: end;
+                margin-right: 8px;
+            }
+
+        }
+    }
+}

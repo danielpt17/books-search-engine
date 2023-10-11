@@ -1,0 +1,10 @@
+<div *ngIf="book" class="result" (click)="onBookClick(book)">
+    <div class="data-container">
+        <span class="categories">{{book.categories && book.categories && book.categories[0]}}</span>
+        <span class="title">{{book.title}}</span>
+        <span class="author">{{book.authors && book.authors.length && book.authors[0]}}</span>
+    </div>
+    <p-button *ngIf="showAddBtn" (click)="onAddBookClick($event)" label="Add to wishlist"></p-button>
+    <p-button *ngIf="showRemoveBtn" styleClass="p-button-danger" (click)="onRemoveBookClick($event)"
+        label="Remove"></p-button>
+</div>

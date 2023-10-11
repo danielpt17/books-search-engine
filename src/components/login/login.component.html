@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="login-container">
+        <div class="left-side">
+            <p class="welcome-message">
+                Welcome to the world of literary adventures, where every page holds a new story to explore. Let's embark on
+                a
+                journey through the pages of countless books together!
+            </p>
+            <img src="../../assets/books.jpg" /> 
+        </div>
+        <div class="form-container">
+            <form>
+                <label htmlFor="username">Username*</label>
+                <input id="username" [ngModelOptions]="{standalone: true}" type="text" pInputText [(ngModel)]="username" />
+            </form>
+            <div class="button-container">
+                <p-button (click)="onSubmit()" label="Login"></p-button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

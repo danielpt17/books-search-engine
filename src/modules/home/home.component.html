@@ -1,0 +1,20 @@
+<div class="search-container">
+    <div class="form-container">
+        <h2>Search for books</h2>
+        <form>
+            <input placeholder="Book name" class="search-input" type="text" (input)="onInputChange($event)">
+        </form>
+    </div>
+    <p-scrollPanel [style]="{width:'100%',height:'90%'}" styleClass="custombar2">
+        <div class="results" *ngFor="let result of searchResults">
+            <app-search-result (addBookClicked)="onAddBookClicked($event)" (bookClicked)="onBookClicked($event)"
+                [book]="result"></app-search-result>
+        </div>
+    </p-scrollPanel>
+    <div class="paginator-wrapper">
+        <p-paginator #p [alwaysShow]=false (onPageChange)="onPageChange($event)" [first]="0" [rows]="20"
+        [totalRecords]="totalBooks"></p-paginator>
+
+    </div>
+</div>
+<p-toast></p-toast>

@@ -1,0 +1,10 @@
+<div class="navbar">
+  <div class="left-container">
+    <span class='header'>Bookstore</span>
+    <span *ngIf="showRoutes()" class="links">
+      <p-button styleClass="p-button-secondary p-button-text"> <a class="link" routerLink="/search">BOOKS</a></p-button>
+      <p-button styleClass="p-button-secondary p-button-text"> <a class="link"
+          routerLink="/wishlist">WISHLIST</a></p-button>
+    </span>
+  </div>
+</div>
