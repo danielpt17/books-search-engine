@@ -1,8 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-} from '@angular/core';
+import { Component } from '@angular/core';
 import { AuthService } from 'src/services/auth.service';
 
 @Component({
@@ -11,13 +7,9 @@ import { AuthService } from 'src/services/auth.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(
-    private readonly authService: AuthService,
-    private readonly cdr: ChangeDetectorRef
-  ) {}
+  constructor(private readonly authService: AuthService) {}
 
   showRoutes() {
-    // this.cdr.detectChanges();
     return this.authService.isLoggedIn;
   }
 }
